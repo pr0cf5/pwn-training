@@ -4,7 +4,7 @@ Change whatever is under `_start:` and execute `./assemble.sh` to compile your s
 
 This is the default shellcode (exit(-1)):
 
-```
+```assembly
 ;shellcode.asm
 [SECTION .text]
 global _start
@@ -19,7 +19,7 @@ _start:
 
 You can change it to exit(1) by modifying the shellcode like this:
 
-```
+```assembly
 ;shellcode.asm
 [SECTION .text]
 global _start

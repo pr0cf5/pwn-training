@@ -42,6 +42,7 @@ By now you should know the basic usages of `objdump` and `gdb`.  To set a breakp
 
 ```python
 def debug():
+        script = ""
         bp = [0x401189]
         for x in bp:
                 script += "b *0x%x"%x

@@ -5,7 +5,7 @@
 typedef void (*funcptr) (void);
 
 void vuln(){
-	char buf[0x10];
+	char buf[0x50];
 	printf("give me your name: \n");
 	gets(buf);
 }
